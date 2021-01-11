@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rhys Gordon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-12">
+                <div class="section2-header">
+                    <h1 class="large">Rhys Gordon Portfolio</h1>
+                    <h2 class="large">A Showcase of Current Projects</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="section2-header">My Work</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 1 - Timer</label>
+                    <p>This project displays a timer that will count down from any number entered until it reaches 0 using Javascript. It will also animate a border that rotates with the countdown.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 2 - Movie Comparison App</label>
+                    <p>This project uses Javascript and 'omdAPI' to search and compare 2 movies. A selection of properties will be displayed and then compared.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 3 - Maze Game</label>
+                    <p>This project uses Javascript and the 'Matter.js' library to generate a random maze. The user must reach the goal using 'WASD' to move the ball.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 4 - Secret Message App</label>
+                    <p>This project uses Javascript to take a message and convert it to a url. This url can then be entered to display the message entered previously.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 5 - Testing Framework</label>
+                    <p>This project uses Javascript and Node.js to create a widget that can be used to test browser-based Javascript apps. This test app can test an entire application.</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="info-img.png">
+                    </div>
+                    <label>Project 6 - E-Commerce App</label>
+                    <p>This project uses Javascript and Node.js to create an entire e-commerce app. This includes a Node.js web server to display pages.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="#"><div class="fa fa-phone"></div></a>
+        <a href="#"><div class="fa fa-envelope"></div></a>
+    </div>
+
+
+
+    <script>
+        function dropdownMenu() {
+            const navbar = document.getElementById('dropdownClick');
+
+            if (navbar.className === "topnav") {
+                navbar.className += " responsive";
+            } else {
+                navbar.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
